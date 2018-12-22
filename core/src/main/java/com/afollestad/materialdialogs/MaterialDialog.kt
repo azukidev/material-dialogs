@@ -21,7 +21,10 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
-import androidx.annotation.*
+import androidx.annotation.CheckResult
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+import androidx.annotation.ColorInt
 import com.afollestad.materialdialogs.Theme.Companion.inferTheme
 import com.afollestad.materialdialogs.WhichButton.NEGATIVE
 import com.afollestad.materialdialogs.WhichButton.NEUTRAL
