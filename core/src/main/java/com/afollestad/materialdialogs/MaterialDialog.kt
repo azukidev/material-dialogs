@@ -21,9 +21,7 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
-import androidx.annotation.CheckResult
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
+import androidx.annotation.*
 import com.afollestad.materialdialogs.Theme.Companion.inferTheme
 import com.afollestad.materialdialogs.WhichButton.NEGATIVE
 import com.afollestad.materialdialogs.WhichButton.NEUTRAL
@@ -277,6 +275,11 @@ class MaterialDialog(
   )
   fun clearNeutralListeners(): MaterialDialog {
     this.neutralListeners.clear()
+    return this
+  }
+
+  fun backgroundColor(@ColorInt res: Int): MaterialDialog {
+    this.view.setBackgroundColor(res)
     return this
   }
 
